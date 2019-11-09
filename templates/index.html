@@ -1,38 +1,4 @@
-<html>
-
-<head></head>
-
-<body>
-    <div>
-        {% for data in value %}
-        <li>{{ data }}</li>
-        {% endfor %}
-    </div>
-    <div>
-        {% if suasana == "senang" %}
-        <p>dia juga cinta</p>
-        {% elif suasana == "sedih" %}
-        <p>Dia juga sedih</p>
-        {% else %}
-        <p>dia sedih</p>
-        {% endif %}
-    </div>
-    <div>=========================================</div>
-    <div>
-        {% set hari = "jumat berkah" %}
-        <p>{{ hari }}</p>
-    </div>
-    <div>=========================================</div>
-    <div>
-        {% for data in value %}
-        {% if data == "senin" %}
-        <p>Aku seneng sekali</p>
-        {% elif data == "minggu" %}
-        <p> Aku libur senengnya </p>
-        {% endif %}
-        {% endfor %}
-    </div>
-
-</body>
-
-</html>
+{% extends "main_layout.html" %}
+{% block content %}
+<p>INI ADALAH INDEX</p>
+{% endblock %}
